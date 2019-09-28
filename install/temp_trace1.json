@@ -1,0 +1,40 @@
+{
+    "author": "manson wu",
+    "start":"3.0",
+    "end":"55.0",
+    "actions": [
+        {
+            "name": "sleep",
+            "value": "2"
+        },
+        {
+            "name": "move",
+            "value": "200,200,0.1"
+        },
+        {
+            "name": "drag",
+            "value": "250,250,0.5"
+        },
+        {
+            "name": "sleep",
+            "value": "2"
+        },
+        {
+            "name": "move",
+            "value": "250,250,0.1"
+        },
+        {
+            "name": "drag",
+            "value": "300,450,1"
+        },
+        {
+            "name": "move",
+            "value": "300,450,0.1"
+        },
+        {
+            "name": "drag",
+            "value": "120,550,2"
+        }
+    ]
+}
+

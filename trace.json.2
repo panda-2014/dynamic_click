@@ -1,0 +1,143 @@
+{
+    "author": "manson wu",
+    "start":"2019-04-21 18:48:00",
+    "end":"2019-04-21 18:50:00",
+    "actions": [
+        {
+            "id":1,
+            "name":"trace_image",
+            "value":"t2.png",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id_yes":2,
+            "next_id_no":3
+        },
+        {
+            "id":2,
+            "name": "click",
+            "value": "ref:1,1,0.2",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id":4
+        },
+        {
+            "id":3,
+            "name":"refresh_web",
+            "value":"f5",
+            "sleep1":0,
+            "sleep2":2,
+            "next_id":1
+        },
+        {
+            "id":4,
+            "name":"trace_image",
+            "value":"t4.png",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id_yes":5,
+            "next_id_no":6
+        },
+        {
+            "id":5,
+            "name": "click",
+            "value": "ref:4,1,0.2",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id":-1
+        },
+        {
+            "id":6,
+            "name": "scroll_web",
+            "value": "0.1",
+            "sleep1":0.5,
+            "sleep2":0.5,
+            "next_id":4
+        },
+        {
+            "id":7,
+            "name": "sleep",
+            "value": "0.1",
+            "next_id":0
+        }
+    ]
+}
+
+{
+    "author": "manson wu",
+    "start":"",
+    "end":"",
+    "actions": [
+        {
+            "id":1,
+            "name": "click",
+            "value": "1,1,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":2
+        },
+        {
+            "id":2,
+            "name": "move",
+            "value": "700,500,3",
+            "sleep1":1,
+            "sleep2":2,
+            "next_id":3
+        },
+
+        {
+            "id":3,
+            "name": "trace_image",
+            "value": "t5.png",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id_yes":4,
+            "next_id_no":5
+        },
+
+        {
+            "id":4,
+            "name": "click",
+            "value": "ref:3,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":6
+        },
+        {
+            "id":1,
+            "name": "click",
+            "value": "rel:0,50,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":2
+        },
+
+        {
+            "id":3,
+            "name": "trace_image",
+            "value": "t2.png",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id_yes":4,
+            "next_id_no":5
+        },
+
+        {
+            "id":4,
+            "name": "click",
+            "value": "ref:3,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":-1
+        },
+
+        {
+            "id":5,
+            "name": "click",
+            "value": "800,400,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":-1
+        }
+    ]
+}
+

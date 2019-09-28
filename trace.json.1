@@ -1,0 +1,66 @@
+{
+    "author": "manson wu",
+    "start":"2019-04-21 18:48:00",
+    "end":"2019-04-21 18:50:00",
+    "actions": [
+        {
+            "id":1,
+            "name": "move",
+            "value": "200,200,0.1",
+            "next_id":2
+        },
+        {
+            "id":2,
+            "name": "click",
+            "value": "200,200,1,0.2",
+            "next_id":3
+        },
+        {
+            "id":3,
+            "name": "sleep",
+            "value": "0.1",
+            "next_id":4
+        },
+        {
+            "id":4,
+            "name": "move",
+            "value": "300,300,0.1",
+            "next_id":5
+        },
+        {
+            "id":5,
+            "name": "drag",
+            "value": "300,400,0.5",
+            "next_id":6
+        },
+        {
+            "id":6,
+            "name": "release",
+            "value": "300,400",
+            "next_id":7
+        },
+
+        {
+            "id":7,
+            "name": "trace_image",
+            "value": "t2.png",
+            "next_id_yes":7,
+            "next_id_no":7
+        },
+
+        {
+            "id":7,
+            "name": "trace_image",
+            "value": "t2.png",
+            "next_id":7
+        },
+
+        {
+            "id":7,
+            "name": "sleep",
+            "value": "0.1",
+            "next_id":0
+        }
+    ]
+}
+

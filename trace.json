@@ -1,0 +1,128 @@
+{
+    "author": "manson wu",
+    "start":"",
+    "end":"",
+    "actions": [
+        {
+            "id":1,
+            "name": "click",
+            "value": "1,1,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":2
+        },
+        {
+            "id":2,
+            "name": "move",
+            "value": "5,5,3",
+            "sleep1":1,
+            "sleep2":2,
+            "next_id":15
+        },
+
+        {
+            "id":15,
+            "name":"refresh_web",
+            "value":"f5",
+            "sleep1":0,
+            "sleep2":4,
+            "next_id":3
+        },
+
+        {
+            "id":3,
+            "name": "trace_image",
+            "value": "t8.png",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id_yes":4,
+            "next_id_no":15
+        },
+
+        {
+            "id":4,
+            "name": "click",
+            "value": "ref:3,80,20,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":6
+        },
+
+        {
+            "id":6,
+            "name": "trace_image",
+            "value": "t9.png",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id_yes":7,
+            "next_id_no":99
+        },
+
+        {
+            "id":7,
+            "name": "click",
+            "value": "ref:6,80,20,1,0.2",
+            "sleep1":1,
+            "sleep2":0,
+            "next_id":9
+        },
+
+        {
+            "id":9,
+            "name": "trace_image",
+            "value": "t2.png",
+            "sleep1":0,
+            "sleep2":0,
+            "next_id_yes":10,
+            "next_id_no":99
+        },
+
+        {
+            "id":10,
+            "name": "click",
+            "value": "ref:9,5,5,1,0.2",
+            "sleep1":0.5,
+            "sleep2":0.5,
+            "next_id":11
+        },
+
+        {
+            "id":11,
+            "name": "scroll_web",
+            "value": "-20",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":12
+        },
+
+        {
+            "id":12,
+            "name": "trace_image",
+            "value": "t4.png",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id_yes":13,
+            "next_id_no":99
+        },
+
+        {
+            "id":13,
+            "name": "click",
+            "value": "ref:12,5,5,1,0.2",
+            "sleep1":1,
+            "sleep2":0.5,
+            "next_id":99
+        },
+
+
+        {
+            "id":99,
+            "name": "click",
+            "value": "800,400,1,0.2",
+            "sleep1":1,
+            "sleep2":1,
+            "next_id":-1
+        }
+    ]
+}
+
